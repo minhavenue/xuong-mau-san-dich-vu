@@ -16,14 +16,14 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import coverImg from "@/assets/cover.jpg";
-import anNhienImg from "@/assets/staff/nhan-su-xay-kenh.jpg";
-import minhAnhImg from "@/assets/staff/nhan-su-ban-hang.jpg";
-import linhChiImg from "@/assets/staff/nhan-su-edit-video.jpg";
-import giaHanImg from "@/assets/staff/nhan-su-trang-ban-hang.jpg";
-import thaoVyImg from "@/assets/staff/nhan-su-hinh-anh.jpg";
-import ngocMaiImg from "@/assets/staff/nhan-su-tao-video.jpg";
-import haMyImg from "@/assets/staff/nhan-su-cham-soc.jpg";
-import thanhTrucImg from "@/assets/staff/nhan-su-nhan-tin.jpg";
+import anhTroLyXayKenh from "@/assets/staff/nhan-su-xay-kenh.jpg";
+import anhTroLyBanHang from "@/assets/staff/nhan-su-ban-hang.jpg";
+import anhTroLyEditVideo from "@/assets/staff/nhan-su-edit-video.jpg";
+import anhTroLyTrangBanHang from "@/assets/staff/nhan-su-trang-ban-hang.jpg";
+import anhTroLyHinhAnh from "@/assets/staff/nhan-su-hinh-anh.jpg";
+import anhTroLyTaoVideo from "@/assets/staff/nhan-su-tao-video.jpg";
+import anhTroLyChamSoc from "@/assets/staff/nhan-su-cham-soc.jpg";
+import anhTroLyNhanTin from "@/assets/staff/nhan-su-nhan-tin.jpg";
 import installerImg from "@/assets/nguoi-cai-agent.jpg";
 
 export const Route = createFileRoute("/")({
@@ -80,7 +80,7 @@ const AGENTS: AgentProfile[] = [
     features: ["Lập lịch nội dung 30 ngày", "Viết kịch bản theo ngành", "Phân tích chủ đề tiềm năng"],
     price: 999000,
     industries: ["Kinh doanh online", "Giáo dục", "Du lịch", "Sức khỏe"],
-    image: anNhienImg,
+    image: anhTroLyXayKenh,
   },
   {
     id: "ban-hang",
@@ -91,7 +91,7 @@ const AGENTS: AgentProfile[] = [
     features: ["Tư vấn đúng nhu cầu", "Chốt đơn tự động", "Tổng hợp khách tiềm năng"],
     price: 999000,
     industries: ["Thời trang", "Mỹ phẩm", "Nhà hàng – F&B", "Kinh doanh online"],
-    image: minhAnhImg,
+    image: anhTroLyBanHang,
   },
   {
     id: "edit-video",
@@ -102,7 +102,7 @@ const AGENTS: AgentProfile[] = [
     features: ["Cắt ghép tự động", "Chèn phụ đề và nhạc", "Xuất đúng tỉ lệ nền tảng"],
     price: 599000,
     industries: ["Du lịch", "Sức khỏe", "Kinh doanh online", "Giáo dục"],
-    image: linhChiImg,
+    image: anhTroLyEditVideo,
   },
   {
     id: "tao-trang-ban-hang",
@@ -113,7 +113,7 @@ const AGENTS: AgentProfile[] = [
     features: ["Bố cục theo ngành hàng", "Nội dung bán hàng", "Nút gọi hành động và biểu mẫu"],
     price: 799000,
     industries: ["Thời trang", "Mỹ phẩm", "Bất động sản", "Giáo dục"],
-    image: giaHanImg,
+    image: anhTroLyTrangBanHang,
   },
   {
     id: "san-xuat-hinh-anh",
@@ -124,7 +124,7 @@ const AGENTS: AgentProfile[] = [
     features: ["Ảnh sản phẩm thu hút", "Bộ ảnh social đồng bộ", "Tùy biến phong cách thương hiệu"],
     price: 499000,
     industries: ["Mỹ phẩm", "Thời trang", "Nhà hàng – F&B"],
-    image: thaoVyImg,
+    image: anhTroLyHinhAnh,
   },
   {
     id: "tao-video",
@@ -135,7 +135,7 @@ const AGENTS: AgentProfile[] = [
     features: ["Video từ ý tưởng", "Giọng đọc AI tiếng Việt", "Nhiều phiên bản thử nghiệm"],
     price: 699000,
     industries: ["Mỹ phẩm", "Bất động sản", "Du lịch", "Kinh doanh online"],
-    image: ngocMaiImg,
+    image: anhTroLyTaoVideo,
   },
   {
     id: "cham-soc-khach-hang",
@@ -146,7 +146,7 @@ const AGENTS: AgentProfile[] = [
     features: ["Phản hồi tức thì", "Tra cứu đơn và nhắc lịch", "Chăm sóc sau bán định kỳ"],
     price: 299000,
     industries: ["Thời trang", "Nhà hàng – F&B", "Sức khỏe", "Bất động sản"],
-    image: haMyImg,
+    image: anhTroLyChamSoc,
   },
   {
     id: "nhan-tin-hang-loat",
@@ -157,7 +157,7 @@ const AGENTS: AgentProfile[] = [
     features: ["Phân nhóm khách tự động", "Gửi theo lịch trình", "Báo cáo tỉ lệ phản hồi"],
     price: 299000,
     industries: ["Kinh doanh online", "Giáo dục", "Mỹ phẩm", "Sức khỏe"],
-    image: thanhTrucImg,
+    image: anhTroLyNhanTin,
   },
 ];
 
@@ -430,9 +430,9 @@ function ComboSection() {
       icon: Sparkles,
       includes: ["Chiến lược nội dung 30 ngày", "Kịch bản video theo ngành", "Hình ảnh và video đồng bộ"],
       members: [
-        { name: "Trợ lý Xây kênh", image: anNhienImg },
-        { name: "Trợ lý Edit video", image: linhChiImg },
-        { name: "Trợ lý Hình ảnh", image: thaoVyImg },
+        { name: "Trợ lý Xây kênh", image: anhTroLyXayKenh },
+        { name: "Trợ lý Edit video", image: anhTroLyEditVideo },
+        { name: "Trợ lý Hình ảnh", image: anhTroLyHinhAnh },
       ],
     },
     {
@@ -440,9 +440,9 @@ function ComboSection() {
       icon: ShoppingBag,
       includes: ["Tư vấn và chốt đơn 24/7", "Chăm sóc khách hàng tự động", "Nhắn tin remarketing đúng lịch"],
       members: [
-        { name: "Trợ lý Bán hàng", image: minhAnhImg },
-        { name: "Trợ lý Chăm sóc", image: haMyImg },
-        { name: "Trợ lý Nhắn tin", image: thanhTrucImg },
+        { name: "Trợ lý Bán hàng", image: anhTroLyBanHang },
+        { name: "Trợ lý Chăm sóc", image: anhTroLyChamSoc },
+        { name: "Trợ lý Nhắn tin", image: anhTroLyNhanTin },
       ],
     },
   ];
